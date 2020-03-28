@@ -1,4 +1,30 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "ja"
 title = "wotsushi's blog"
 theme = "mainroad"
+
+[Params]
+  dateformat = "2006-01-02"
+  post_meta = ["date", "categories"]
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+tags_counter = true
+
+[Params.widgets.social]
+github = "wotsushi"
+twitter = "wotsushi"
+
+[[Params.widgets.social.custom]]
+  title = "AtCoder"
+  url = "https://atcoder.jp/users/wotsushi"
+  # icon = "atcoder.svg"
