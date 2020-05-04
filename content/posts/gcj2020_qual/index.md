@@ -5,6 +5,7 @@ categories:
   - 競プロ
 tags:
   - GCJ
+  - コンテスト参加記
 ---
 
 # 問題情報
